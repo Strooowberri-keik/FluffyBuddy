@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fluffy Buddy</string>
+    <string name="heading_o">Adopt Don\'t Shop</string>
+    <string name="heading_t">Fur Parents</string>
+    <string name="heading_th">No Pets Should Left Behind</string>
+    <string name="description_o">Adopting an animal comes with several benefits. Firstly, you are giving an animal a chance to live a happy life in a caring environment. </string>
+    <string name="description_t">As fur parents, you embrace the role of a caregiver, protector, and provider for your pet. You become responsible for their overall well-being, including their physical health, mental stimulation, and emotional needs.</string>
+    <string name="description_th"> Ensuring that your furry friend remains a cherished part of your life, regardless of the circumstances or challenges you may face. It emphasizes the commitment and responsibility of being a pet owner and treating your pet as a beloved member of your family.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

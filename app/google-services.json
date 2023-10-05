@@ -1,0 +1,39 @@
+ {
+  "project_info": {
+    "project_number": "775136837949",
+    "project_id": "fluffy-buddy",
+    "storage_bucket": "fluffy-buddy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775136837949:android:8b6b050b4debd088c6c554",
+        "android_client_info": {
+          "package_name": "com.example.fluffybuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775136837949-n1g8rsju24e2dkehpnvh1r646qminhhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDoYSm8WjlNVtFV2sKpi86-SZ0TL5290M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775136837949-n1g8rsju24e2dkehpnvh1r646qminhhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="Profile Icon"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:id="@+id/addPhotoIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_add_dp"
+            android:contentDescription="Add Photo Icon"
+            android:layout_alignBottom="@+id/profileIcon"
+            android:layout_alignEnd="@+id/profileIcon"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Logout Icon"
+            android:src="@drawable/ic_logout" />
+
+    </RelativeLayout>
+
+
+    <EditText
+            android:id="@+id/etDisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingStart="15dp"
+            android:hint="Display Name"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_shape"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_shape"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_shape"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:inputType="textPostalAddress"
+        android:hint="Address" />
+        <EditText
+            android:id="@+id/etMobNum"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_shape"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:inputType="text|phone"
+            android:hint="Mobile Number +(63)" />
+
+        <!-- Add other UI elements for other user profile fields as needed -->
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:fontFamily="@font/archivo_semibold"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnDeleteProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Profile"
+            android:shadowColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/red"
+            android:fontFamily="@font/archivo_semibold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

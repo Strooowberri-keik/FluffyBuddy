@@ -1,0 +1,194 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Photo of the Animal -->
+        <ImageView
+            android:id="@+id/animalPhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cataa"
+            android:contentDescription="Animal Photo" />
+
+        <!-- Animal Name, Age, Location -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/animalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siamese"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/animalAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="2 years old"
+                android:justificationMode="inter_word"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/animalLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New York"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/viewDetailsLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Details"
+                android:textColor="@color/third"
+                android:textSize="16sp"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:gravity="end"
+            android:padding="4dp">
+
+            <!-- Heart Count -->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <!-- <androidx.cardview.widget.CardView
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="8dp"
+         android:elevation="2dp"
+         android:radius="8dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:padding="16dp"
+             android:gravity="center_vertical">
+
+             &lt;!&ndash; Photo of the Animal &ndash;&gt;
+             <ImageView
+                 android:id="@+id/animalPhoto"
+                 android:layout_width="80dp"
+                 android:layout_height="80dp"
+                 android:src="@drawable/cataa"
+                 android:contentDescription="Animal Photo" />
+
+             &lt;!&ndash; Animal Name, Age, Location &ndash;&gt;
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:orientation="vertical"
+                 android:layout_marginStart="16dp">
+
+                 <TextView
+                     android:id="@+id/animalName"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Siamese"
+                     android:textSize="18sp"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:id="@+id/animalAge"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="2 years old"
+                     android:textSize="16sp" />
+
+                 <TextView
+                     android:id="@+id/animalLocation"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="New York"
+                     android:textSize="16sp" />
+
+                 <TextView
+                     android:id="@+id/viewDetailsLink"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="View Details"
+                     android:textColor="@color/third"
+                     android:textSize="16sp"
+                     android:layout_gravity="start"
+                     android:layout_marginTop="8dp" />
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="bottom"
+                 android:orientation="vertical"
+                 android:gravity="end"
+                 android:padding="4dp">
+
+                 <ImageView
+                     android:id="@+id/heartReactButton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/heart_empty"
+                     android:contentDescription="Heart React"
+                     android:padding="12dp" />
+
+                 &lt;!&ndash; Heart Count &ndash;&gt;
+                 <TextView
+                     android:id="@+id/heartCount"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:text="0"
+                     android:textColor="@color/black"
+                     android:textSize="16sp" />
+
+             </LinearLayout>
+
+              &lt;!&ndash;Triple Dots Menu (Options) &ndash;&gt;&ndash;&gt;
+             <ImageView
+                 android:id="@+id/optionsMenu"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/dots"
+                 android:contentDescription="Options"
+                 android:layout_marginTop="3dp"
+                 android:padding="15dp"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentBottom="true" />
+
+         </LinearLayout>
+     </androidx.cardview.widget.CardView>-->
